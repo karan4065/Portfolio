@@ -4,14 +4,33 @@ body {
   font-family: sans-serif;  
   color: white;            
 }
-.App{
-   background: linear-gradient(to right, rgb(4, 4, 12)20%, rgb(28, 77, 107));
+.App {
+  position: relative;
+  background: url("https://cdn.prod.website-files.com/6768f29a6d5da42209173f20/6768f29b6d5da42209178848_Finding%20Nemo.svg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 0;
 }
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: inherit;
+  filter: brightness(0.185) hue-rotate(360deg);  
+  z-index: -1;
+}
+
 .fixed-navbar {
   position: fixed;
   top: 0;
   left: 0;
- 
   z-index: 10000;  
   display: flex;
   justify-content: space-between;
@@ -138,7 +157,24 @@ body {
   margin-top: 6rem;
   margin-left: -15rem;
  }
- 
+ #mount2::after{
+   content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: brightness(0.8) contrast(1.09) hue-rotate(360deg);
+  z-index: 1;
+  pointer-events: none;
+ }
+  #mount1::after{
+   content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: brightness(0.8) contrast(1.09) hue-rotate(360deg);
+  z-index: 1;
+  pointer-events: none;
+ }
  
 
 #pahad {
@@ -154,7 +190,7 @@ margin-top: 25rem;
   position: absolute;
   inset: 0;
   background: inherit;
-  filter: brightness(0.5) contrast(1.5) hue-rotate(340deg);
+  filter: brightness(0.5) contrast(1.6) hue-rotate(340deg);
   z-index: 1;
   pointer-events: none;
 }
@@ -197,7 +233,7 @@ margin-top: 25rem;
 
 #treegroup{
   background-image: url('./images/treegroup.png');
-  background-size: 1700px 450px; 
+  background-size: 1700px 460px; 
   background-repeat: no-repeat;            
   background-position:bottom center; 
   margin-top: 18rem; 
@@ -208,7 +244,6 @@ margin-top: 25rem;
   position: absolute;
   inset: 0;
   background: inherit;
- 
   z-index: 1;
   pointer-events: none;
 }

@@ -83,20 +83,21 @@
 }
  
 .tech-stack span {
-  background: #0B3037;
-  padding: 0.2rem 0.5rem;
+  background: #0b2b31;
+  padding: 0.25rem 0.5rem;
   border-radius: 15px;
   margin: 0.1rem;
   display: inline-block;
   font-size: 0.8rem;
-  color: #54DBBE;
+  color: #07c198;
   transition: all 0.5s ease;
  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-optical-sizing: auto;
 }
 .tech-stack span:hover{
-  color: #38ffeb;
+  transform: scale(1.05);
+  color: #42ffec;
 }
  
 @keyframes fadeInUp {
