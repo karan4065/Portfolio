@@ -279,3 +279,58 @@
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 428px) and (max-width: 432px){
+  #certificates{
+    margin-top: -80px;
+  }
+    .certi-content {
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .certification-timeline {
+    padding-left: 15px;
+    gap: 30px;
+    border-left: 2px dotted #0095ff;
+  }
+
+  .certification-card {
+    margin-left: 10px;
+    padding: 30px 20px;
+    height: 400px;
+  }
+
+  .cert-title {
+    font-size: 1.2rem;
+  }
+
+  .cert-issuer {
+    font-size: 1rem;
+  }
+
+  .cert-date {
+    font-size: 0.8rem;
+    padding: 7px 8px;
+  }
+
+  .cert-link {
+    font-size: 1rem;
+   
+  }
+
+  .cert-achievements {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    line-height: 30px;
+  }
+
+  .tag {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+    margin-top: 20px;
+  }
+}

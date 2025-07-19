@@ -298,6 +298,75 @@
   }
 }
 
+@media screen and (min-width: 428px) and (max-width: 432px) {
+   #portfolio {
+    margin-top: -460px;
+  }
+
+  .portfolio-title {
+    font-size: 2rem;
+  }
+    .portfolio-project:nth-of-type(1) .project-left {
+    order: 1; /* image second */
+  }
+
+  .portfolio-project:nth-of-type(1) .project-right {
+    order: 2; /* text first */
+  }
+
+  /* Project 2: Student Management (image first) */
+  .portfolio-project:nth-of-type(2) .project-left {
+    order: 2; /* text second */
+  }
+
+  .portfolio-project:nth-of-type(2) .project-right {
+    order: 1; /* image first */
+  }
+
+  /* Project 3: Tic Tac Toe (image first) */
+  .portfolio-project:nth-of-type(3) .project-left {
+    order: 1;
+  }
+
+  .portfolio-project:nth-of-type(3) .project-right {
+    order: 2;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    line-height: 22px;
+  }
+
+  .portfolio-container {
+    padding: 0 20px;
+  }
+
+  .tech-stack span {
+    font-size: 0.7rem;
+    padding: 0.40rem 0.80rem;
+  }
+
+   .portfolio-project {
+    display: flex;
+    flex-direction: column !important; 
+  }
+
+  .portfolio-project .project-left {
+    order: 1;
+    text-align: center;
+  }
+
+  .portfolio-project .project-right {
+    order: 2;
+    text-align: center;
+  }
+}
+
+
 .image-hover-container {
   position: relative;
   width: 100%;
